@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    background-color: #CAD2C5;
+    display: flex;
+    padding: 20px;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.logo{
+    height: 150px;
+    
+
+}
+
+.navList li{
+    list-style: none;
+}
+
+.navList li a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.seccionNovedades{
+    display: flex;
+    justify-content: center;
+    padding-top: 100px;
+}
+
+.portada{
+    height: 500px;
+}
+
+.seccionCategorias{
+    display: flex;
+}
+
+.categoria{
+    padding: 100px 10px;
+    
+}
+
+.botonCategoria{
+    width: 100%;
+}
+
+.seccionMail{
+    display: flex;
+    justify-content: center;
+
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.seccionNosotros{
+    display: flex;
+    justify-content: center;
+    padding-top: 100px;
+    flex-direction: column;
+}
+
+.tituloNosotros{
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    font-size: 50px;
+    font-family: "Bebas Neue", sans-serif;
+}
+
+
+.portadaNosotros{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.descripcionNosotros{
+    padding: 100px;
+    font-size: 25px;
+    font-family: "Ponomar", sans-serif;
+}
+
+.cuerpoContacto{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.tituloContacto{
+    background-color: #808080;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    display: flex;
+    justify-content: center;
+    font-size: 100px;
+    font-family: "Bebas Neue", sans-serif;
+} 
+
+.seccionIconos{
+    display: inline-flex;
+    justify-content: center;
+    padding: 100px;
+    
+}
+
+.seccionMapa{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 100px;
+}
+
+.icono{
+
+    width: auto;
+    height: 30px;
+
+}
+
+
+footer{
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
