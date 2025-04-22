@@ -2,14 +2,32 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
+    
 }
 
-header{
-    background-color: #CAD2C5;
+/*GRID CONTAINER*/
+.grid__container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 0.5fr 2fr 2fr 0.75fr 0.2fr;
+    grid-template-areas: 
+    "header      header"
+    "novedades   novedades"
+    "categorias  categorias"
+    "mail        mail"
+    "footer      footer"
+    ;
+    background-color: #fe0879;
+}
+
+.menu__principal{
+    background-color: #fed715;
     display: flex;
     padding: 20px;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
+    grid-area: header;
     
 }
 
@@ -19,31 +37,29 @@ header{
 
 }
 
-.navList li{
-    list-style: none;
-}
 
-.navList li a {
-    text-decoration: none;
-    color: #000000;
-}
 
-.seccionNovedades{
+.seccion__novedades{
     display: flex;
     justify-content: center;
-    padding-top: 100px;
+    padding-top: 70px;
+    grid-area: novedades;
+    
 }
 
-.portada{
-    height: 500px;
-}
 
-.seccionCategorias{
+.seccion__categorias{
     display: flex;
+    grid-area: categorias;
+    flex-flow: wrap;
+    justify-content: space-evenly;
 }
 
 .categoria{
-    padding: 100px 10px;
+    display: flex;
+    flex-direction: column;
+    margin: 1em;
+
     
 }
 
@@ -51,12 +67,19 @@ header{
     width: 100%;
 }
 
-.seccionMail{
+.seccion__mail{
     display: flex;
     justify-content: center;
 
     padding-top: 100px;
     padding-bottom: 100px;
+    grid-area: mail;
+}
+
+.ingreso__mail{
+    display: flex;
+    flex-direction: column;
+    width: 500px;
 }
 
 .seccionNosotros{
@@ -125,9 +148,35 @@ header{
 }
 
 
-footer{
+.pie{
     display: flex;
     justify-content: center;
     padding-top: 50px;
     padding-bottom: 50px;
+    grid-area: footer;
+}
+
+
+
+
+/* media query tablet*/
+
+@media (max-width: 768px){
+    .grid__container{
+        background-color: #fed715;
+    }
+    .menu__principal{
+        background-color: #fe0879;
+    }
+}
+
+/* media query mobile*/
+
+@media (max-width: 480px){
+    .grid__container{
+        background-color: #0037b3;
+    }
+    .menu__principal{
+        background-color: #ff82e2;
+    }
 }

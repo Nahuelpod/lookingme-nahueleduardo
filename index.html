@@ -4,38 +4,80 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Looking me</title>
-    <link rel="stylesheet" href="style.css">
+    
+    <!--google font-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Ponomar&display=swap" rel="stylesheet">
 
+    <!--bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+
+    <!--estilos-->
+    <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
-    <header>
-        <img src="./assets/logoSF.png" class="logo" />
-            <!-- el nav va a ser un menu hamburguesa-->
-            <nav class="nav">
-                <ul class="navList">
-                    <li><a href="index.html" target="_blank">Inicio</a></li>    
-                    <li><a href="./sobreNosotros.html" target="_blank">Sobre Nosotros</a></li>
-                    <li><a href="./contacto.html" target="_blank">Cantactanos</a></li>
+    <div class="grid__container">
+
+
+    <header class="menu__principal">
+
+        <!--nav de BS-->
+        <nav class="navbar navbar-expand-lg ">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="index.html"><img src="./assets/logoSF.png" class="logo" /></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="./sobreNosotros.html" target="_blank">Sobre Nosotros</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./contacto.html" target="_blank">Cantactanos</a>
+                  </li>
+                  
                 </ul>
-            </nav>
+                
+              </div>
+            </div>
         </nav>
     </header>
-    <main class="seccionNovedades">
-        <!-- .novedades va a ser un carretel con fotos/videos de las novedades-->
-        <section class="novedades">
-            <button><</button>
-            <img class="portada" src="./assets/portadaIndex.jpg" />
-            <button>></button>
-        </section>
+
+    <main class="seccion__novedades">
+
+        <!--carrusel BS-->
+        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="./assets/oferta1.png" class="d-block w-100" alt="oferta">
+              </div>
+              <div class="carousel-item">
+                <img src="./assets/oferta2.png" class="d-block w-100" alt="oferta">
+              </div>
+              <div class="carousel-item">
+                <img src="./assets/oferta3.png" class="d-block w-100" alt="oferta">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+
+
     </main>
 
     <!--las categorias irian en dos filas de 2 columnas, aunque no logre colocarlas asi.-->
     <!-- iria una imagen representativa de cada categoria-->
-    <main class="seccionCategorias">
+    <main class="seccion__categorias">
         <section class="categoria">
             <img class="img-categoria" src="./assets/remerasPortada.jpg">
             <button class="botonCategoria">Remeras</button>
@@ -54,22 +96,23 @@
         </section>
     </main>
 
-    <main class="seccionMail">
-        <section>
-            <fieldset>
+    <main class="seccion__mail">
+        
+            <fieldset class="ingreso__mail">
                 <input type="text">
                 <button>Quiero recibir novedades</button>
             </fieldset>
-        </section>
+        
 
     </main>
-    <hr>
-    <footer>
+    <footer class="pie">
         <p><strong>@Looking me</strong> Todos los derechos reservados</p>
     </footer>
-    
 
+    </div>
 
+    <!--script bs-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
     
 </body>
 </html>
