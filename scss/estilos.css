@@ -78,7 +78,7 @@ footer {
   justify-content: center;
   padding-top: 70px;
   grid-area: novedades;
-  background-image: url(../../assets/fondo_body.webp);
+  background-image: url(../assets/fondo_body.webp);
 }
 
 @media (max-width: 768px) {
@@ -96,7 +96,7 @@ footer {
   grid-area: categorias;
   flex-flow: wrap;
   justify-content: space-between;
-  background-image: url(../../assets/fondo_body.webp);
+  background-image: url(../assets/fondo_body.webp);
 }
 
 .categoria {
@@ -121,7 +121,7 @@ footer {
   padding-top: 100px;
   padding-bottom: 100px;
   grid-area: mail;
-  background-image: url(../../assets/fondo_body.webp);
+  background-image: url(../assets/fondo_body.webp);
 }
 
 .ingreso__mail {
@@ -133,7 +133,7 @@ footer {
 .seccionNosotros {
   padding-top: 100px;
   flex-direction: column;
-  background-image: url(../../assets/fondo_body.webp);
+  background-image: url(../assets/fondo_body.webp);
 }
 
 .tituloNosotros {
@@ -148,14 +148,14 @@ footer {
 .portadaNosotros {
   display: flex;
   justify-content: center;
-  background-image: url(../../assets/fondo_body.webp);
+  background-image: url(../assets/fondo_body.webp);
 }
 
 .descripcionNosotros {
   padding: 100px;
   font-size: 25px;
   font-family: "Poppins", sans-serif;
-  background-image: url(../../assets/fondo_body.webp);
+  background-image: url(../assets/fondo_body.webp);
 }
 
 @media (max-width: 768px) {
@@ -170,11 +170,11 @@ footer {
 }
 .cuerpoContacto {
   flex-direction: column;
-  background-image: url(../../assets/fondo_body.webp);
+  background-image: url(../assets/fondo_body.webp);
 }
 
 .tituloContacto {
-  background-image: url(../../assets/fondo_titulo_contacto.webp);
+  background-image: url(../assets/fondo_titulo_contacto.webp);
   padding-top: 100px;
   padding-bottom: 100px;
   display: flex;
@@ -189,14 +189,14 @@ footer {
   display: inline-flex;
   justify-content: center;
   padding: 100px;
-  background-image: url(../../assets/fondo_body.webp);
+  background-image: url(../assets/fondo_body.webp);
 }
 
 .seccionMapa {
   display: flex;
   justify-content: center;
   padding-bottom: 100px;
-  background-image: url(../../assets/fondo_body.webp);
+  background-image: url(../assets/fondo_body.webp);
 }
 
 .icono {
