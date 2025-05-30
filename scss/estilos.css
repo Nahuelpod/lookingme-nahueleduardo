@@ -39,14 +39,6 @@ footer {
   grid-template-rows: 0.5fr 2fr 0.5fr 0.75fr 0.2fr;
   grid-template-areas: "header" "novedades" "categorias " "mail " "footer ";
   background-color: #ffffff;
-  /*
-    @media (max-width: 768px) {
-      background-color: $amarillo;
-    }
-
-    @media (max-width: 480px) {
-      background-color: $azul;
-    }*/
 }
 
 .menu__principal {
