@@ -1,0 +1,17 @@
+
+// Mixins reutilizables
+@mixin centrar-flex {
+  display: flex;
+  justify-content: center;
+}
+
+@mixin seccion-grande {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+// Placeholder extend
+%centrado {
+  display: flex;
+  justify-content: center;
+}

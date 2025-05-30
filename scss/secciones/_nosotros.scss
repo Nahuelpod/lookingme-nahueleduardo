@@ -1,0 +1,40 @@
+.seccionNosotros {
+  @extend %centrado;
+  padding-top: 100px;
+  flex-direction: column;
+  background-image: $fondo-body;
+}
+
+.tituloNosotros {
+  @include centrar-flex;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  font-size: 50px;
+  font-family: $fuente-principal;
+}
+
+.portadaNosotros {
+  @include centrar-flex;
+  background-image: $fondo-body;
+}
+
+.descripcionNosotros {
+  padding: 100px;
+  font-size: 25px;
+  font-family: $fuente-principal;
+  background-image: $fondo-body;
+}
+
+
+@media (max-width: 768px) {
+  .tituloNosotros{
+    padding: 0.5rem;
+    }
+  }
+
+@media (max-width: 480px) {
+  .tituloNosotros{
+    padding: 0.5rem;
+    }
+  }
+

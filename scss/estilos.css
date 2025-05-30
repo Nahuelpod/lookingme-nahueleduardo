@@ -1,0 +1,216 @@
+.cuerpoContacto, .seccionNosotros {
+  display: flex;
+  justify-content: center;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #ffffff;
+  color: #000000;
+  line-height: 1.6;
+}
+
+main {
+  padding: 2rem;
+}
+
+h1, h2, h3 {
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+footer {
+  text-align: center;
+  padding: 2rem;
+  border-top: 1px solid #000000;
+  margin-top: 3rem;
+  font-size: 0.9rem;
+}
+
+.grid__container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.5fr 2fr 0.5fr 0.75fr 0.2fr;
+  grid-template-areas: "header" "novedades" "categorias " "mail " "footer ";
+  background-color: #ffffff;
+  /*
+    @media (max-width: 768px) {
+      background-color: $amarillo;
+    }
+
+    @media (max-width: 480px) {
+      background-color: $azul;
+    }*/
+}
+
+.menu__principal {
+  display: flex;
+  justify-content: center;
+  justify-content: space-around;
+  padding: 1rem 2rem;
+  border-bottom: 1px solid #000000;
+}
+.menu__principal .logo {
+  height: 150px;
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+.menu__principal .logo:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(3, 3, 3, 0.937254902);
+}
+
+.pie {
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  grid-area: footer;
+}
+
+.seccion__novedades {
+  display: flex;
+  justify-content: center;
+  padding-top: 70px;
+  grid-area: novedades;
+  background-image: url(../../assets/fondo_body.png);
+}
+
+@media (max-width: 768px) {
+  .seccion__novedades {
+    padding: 0.5rem;
+  }
+}
+@media (max-width: 480px) {
+  .seccion__novedades {
+    padding: 0.5rem;
+  }
+}
+.seccion__categorias {
+  display: flex;
+  grid-area: categorias;
+  flex-flow: wrap;
+  justify-content: space-between;
+  background-image: url(../../assets/fondo_body.png);
+}
+
+.categoria {
+  display: flex;
+  flex-direction: column;
+  margin: 1em;
+}
+
+@media (max-width: 768px) {
+  .seccion__categorias {
+    padding: 0.5rem;
+  }
+}
+@media (max-width: 480px) {
+  .seccion__categorias {
+    padding: 0.5rem;
+  }
+}
+.seccion__mail {
+  display: flex;
+  justify-content: center;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  grid-area: mail;
+  background-image: url(../../assets/fondo_body.png);
+}
+
+.ingreso__mail {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+}
+
+.seccionNosotros {
+  padding-top: 100px;
+  flex-direction: column;
+  background-image: url(../../assets/fondo_body.png);
+}
+
+.tituloNosotros {
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  font-size: 50px;
+  font-family: "Poppins", sans-serif;
+}
+
+.portadaNosotros {
+  display: flex;
+  justify-content: center;
+  background-image: url(../../assets/fondo_body.png);
+}
+
+.descripcionNosotros {
+  padding: 100px;
+  font-size: 25px;
+  font-family: "Poppins", sans-serif;
+  background-image: url(../../assets/fondo_body.png);
+}
+
+@media (max-width: 768px) {
+  .tituloNosotros {
+    padding: 0.5rem;
+  }
+}
+@media (max-width: 480px) {
+  .tituloNosotros {
+    padding: 0.5rem;
+  }
+}
+.cuerpoContacto {
+  flex-direction: column;
+  background-image: url(../../assets/fondo_body.png);
+}
+
+.tituloContacto {
+  background-image: url(../../assets/fondo_titulo_contacto.png);
+  padding-top: 100px;
+  padding-bottom: 100px;
+  display: flex;
+  justify-content: center;
+  font-size: 100px;
+  font-family: "Poppins", sans-serif;
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.seccionIconos {
+  display: inline-flex;
+  justify-content: center;
+  padding: 100px;
+  background-image: url(../../assets/fondo_body.png);
+}
+
+.seccionMapa {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 100px;
+  background-image: url(../../assets/fondo_body.png);
+}
+
+.icono {
+  width: auto;
+  height: 50px;
+}
+
+@media (max-width: 768px) {
+  .tituloContacto {
+    padding: 0.5rem;
+  }
+}
+@media (max-width: 480px) {
+  .tituloContacto {
+    padding: 0.5rem;
+  }
+}/*# sourceMappingURL=estilos.css.map */

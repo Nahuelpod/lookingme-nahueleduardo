@@ -1,0 +1,45 @@
+.cuerpoContacto {
+  @extend %centrado;
+  flex-direction: column;
+  background-image: $fondo-body;
+}
+
+.tituloContacto {
+  background-image: url(../../assets/fondo_titulo_contacto.png);
+  @include seccion-grande;
+  @include centrar-flex;
+  font-size: 100px;
+  font-family: $fuente-principal;
+  background-color: $color-texto;
+  color: #ffffff;
+}
+
+.seccionIconos {
+  display: inline-flex;
+  justify-content: center;
+  padding: 100px;
+  background-image: $fondo-body;
+}
+
+.seccionMapa {
+  @include centrar-flex;
+  padding-bottom: 100px;
+  background-image: $fondo-body;
+}
+
+.icono {
+  width: auto;
+  height: 50px;
+}
+
+@media (max-width: 768px) {
+  .tituloContacto{
+    padding: 0.5rem;
+    }
+  }
+
+@media (max-width: 480px) {
+  .tituloContacto{
+    padding: 0.5rem;
+    }
+  }

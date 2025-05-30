@@ -1,0 +1,17 @@
+.menu__principal {
+  
+  @include centrar-flex;
+  justify-content: space-around;
+  padding: 1rem 2rem;
+  border-bottom: 1px solid $color-borde;
+
+  .logo {
+    height: 150px;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    &:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 4px 12px #030303ef;
+    }
+  }
+
+}

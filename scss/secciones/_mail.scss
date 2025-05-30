@@ -1,0 +1,12 @@
+.seccion__mail {
+  @include centrar-flex;
+  @include seccion-grande;
+  grid-area: mail;
+  background-image: $fondo-body;
+}
+
+.ingreso__mail {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+}

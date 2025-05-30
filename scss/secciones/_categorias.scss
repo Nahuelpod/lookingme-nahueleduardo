@@ -1,0 +1,28 @@
+.seccion__categorias {
+  display: flex;
+  grid-area: categorias;
+  flex-flow: wrap;
+  justify-content: space-between;
+  background-image: $fondo-body;
+}
+
+.categoria {
+  display: flex;
+  flex-direction: column;
+  margin: 1em;
+  
+}
+
+
+
+@media (max-width: 768px) {
+  .seccion__categorias{
+    padding: 0.5rem;
+    }
+  }
+
+@media (max-width: 480px) {
+  .seccion__categorias{
+    padding: 0.5rem;
+    }
+  }

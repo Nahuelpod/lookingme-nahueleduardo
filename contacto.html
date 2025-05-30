@@ -3,20 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contacto</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Looking me</title>
+    
+    
+    <!--bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+
+    <!--estilos-->
+    <link rel="stylesheet" href="./scss/estilos.css">
+
 </head>
 <body>
-    <header>
-        <img src="./assets/logoSF.png" class="logo" />
-            <!-- el nav va a ser un menu hamburguesa-->
-            <nav class="nav">
-                <ul class="navList">
-                    <li><a href="index.html" target="_blank">Inicio</a></li>    
-                    <li><a href="./sobreNosotros.html" target="_blank">Sobre Nosotros</a></li>
-                    <li><a href="./contacto.html" target="_blank">Cantactanos</a></li>
+    <header class="menu__principal">
+
+        <!--nav de BS-->
+        <nav class="navbar navbar-expand-lg ">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="index.html"><img src="./assets/logoSF.png" class="logo" /></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="./sobreNosotros.html" target="_blank">Sobre Nosotros</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./contacto.html" target="_blank">Cantactanos</a>
+                  </li>
+                  
                 </ul>
-            </nav>
+                
+              </div>
+            </div>
         </nav>
     </header>
 
@@ -24,11 +43,13 @@
         <section>
             <h1 class="tituloContacto">CONTACTO</h1>
         </section>
+        
         <section class="seccionIconos">
-            <img class="icono" src="./assets/iconoFacebook.webp" />
-            <img class="icono" src="./assets/iconoInstagram.webp">
-            <img class="icono" src="./assets/iconoMail.webp">
-            <img class="icono" src="./assets/iconoWhatsapp.webp">
+    
+            <a href="#"><img class="icono" src="./assets/iconoFacebook.webp" /></a>
+            <a href="#"><img class="icono" src="./assets/iconoInstagram.webp"></a>
+            <a href="#"><img class="icono" src="./assets/iconoMail.webp"></a>
+            <a href="#"><img class="icono" src="./assets/iconoWhatsapp.webp"></a>
         </section>
         <section class="seccionMapa">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1221.788645487294!2d-65.31037239566132!3d-43.253108896189524!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xbe0144c7861616d5%3A0x7e1a0f7139f6cbd1!2s25%20de%20Mayo%20263!5e0!3m2!1ses-419!2sar!4v1742667915187!5m2!1ses-419!2sar" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
@@ -36,7 +57,7 @@
     </main>
 
       
-    <hr>
+  
     <footer>
         <p><strong>@Looking me</strong> Todos los derechos reservados</p>
     </footer>

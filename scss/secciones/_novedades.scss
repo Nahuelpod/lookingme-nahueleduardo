@@ -1,0 +1,18 @@
+.seccion__novedades {
+  @include centrar-flex;
+  padding-top: 70px;
+  grid-area: novedades;
+  background-image: $fondo-body;
+}
+
+@media (max-width: 768px) {
+  .seccion__novedades{
+    padding: 0.5rem;
+    }
+  }
+
+@media (max-width: 480px) {
+  .seccion__novedades{
+    padding: 0.5rem;
+    }
+  }
